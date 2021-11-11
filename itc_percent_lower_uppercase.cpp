@@ -2,17 +2,16 @@
 
 double itc_percent_lower_uppercase(string str)
 {
-    double k = 0, a = 0;
-    int i = 0, len = itc_len(str);
-    while (len >= 0){
-        if ((str[i] > 64) && (str[i] < 91)){
+    double k = 0, a = 0, i = 0;
+    int len = itc_len(str);
+    while (i < len){
+        if ((str[i] > 65) && (str[i] < 90)){
             k++;
         }
         else if ((str[i] > 96) && (str[i] < 123)){
             a++;
         }
         i++;
-        len--;
     }
-    return (k/a*100);
+    return (a / k);
 }
