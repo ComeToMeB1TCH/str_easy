@@ -8,7 +8,7 @@ double itc_percent_lower_uppercase(string str)
         if ((str[i] > 65) && (str[i] < 90)){
             k++;
         }
-        else if ((str[i] > 96) && (str[i] < 123)){
+        else if ((str[i] > 97) && (str[i] < 122)){
             a++;
         }
         i++;
